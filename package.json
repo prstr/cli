@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "bin/prostore.js",
+  "dependencies": {
+    "prostore.api-client": "*",
+    "fs-extra": "*",
+    "underscore": "*",
+    "nomnom": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:prstr/cli.git"

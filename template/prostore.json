@@ -1,0 +1,7 @@
+{
+  "id": "<%= id %>",
+  "host": "<%= host %>",
+  "publicKey": "<%= publicKey %>",
+  "privateKey": "<%= privateKey %>",
+  "secure": false
+}
