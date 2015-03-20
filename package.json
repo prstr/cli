@@ -1,0 +1,23 @@
+{
+  "name": "prostore.cli",
+  "version": "0.0.0",
+  "description": "ProStore Command Line Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:prstr/cli.git"
+  },
+  "keywords": [
+    "prostore",
+    "cli"
+  ],
+  "author": "Boris Okunskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prstr/cli/issues"
+  },
+  "homepage": "https://github.com/prstr/cli"
+}
