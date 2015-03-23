@@ -11,5 +11,9 @@ nomnom.command('test')
   .help('Test.')
   .callback(require('../lib/cmd/test'));
 
+nomnom.command('pull')
+  .help('Pull.')
+  .callback(require('../lib/cmd/pull'));
+
 
 nomnom.parse();

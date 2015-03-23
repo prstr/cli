@@ -11,7 +11,10 @@
     "prostore.api-client": "*",
     "fs-extra": "*",
     "underscore": "*",
-    "nomnom": "*"
+    "prompt": "*",
+    "nomnom": "*",
+    "async": "*",
+    "cli-color": "*"
   },
   "repository": {
     "type": "git",
