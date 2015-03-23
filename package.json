@@ -14,7 +14,8 @@
     "prompt": "*",
     "nomnom": "*",
     "async": "*",
-    "cli-color": "*"
+    "cli-color": "*",
+    "glob": "*"
   },
   "repository": {
     "type": "git",

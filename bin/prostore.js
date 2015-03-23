@@ -18,6 +18,10 @@ nomnom.command('pull')
     flag: true,
     help: 'Force pull'
   })
+  .option('remove', {
+    flag: true,
+    help: 'Remove files if they are not at server.'
+  })
   .callback(require('../lib/cmd/pull'))
   .help('Pull.');
 
