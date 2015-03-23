@@ -4,16 +4,22 @@
 var nomnom = require('nomnom');
 
 nomnom.command('init')
-  .help('Initialize the store directory.')
-  .callback(require('../lib/cmd/init'));
+  .callback(function(opts) {
+    require('../lib/cmd/init')
+  })
+  .help('Initialize the store directory.');
 
 nomnom.command('test')
   .help('Test.')
   .callback(require('../lib/cmd/test'));
 
 nomnom.command('pull')
-  .help('Pull.')
-  .callback(require('../lib/cmd/pull'));
+  .option('force', {
+    flag: true,
+    help: 'Force pull'
+  })
+  .callback(require('../lib/cmd/pull'))
+  .help('Pull.');
 
 
 nomnom.parse();
