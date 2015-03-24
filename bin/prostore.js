@@ -25,5 +25,17 @@ nomnom.command('pull')
   .callback(require('../lib/cmd/pull'))
   .help('Pull.');
 
+nomnom.command('push')
+  .option('force', {
+    flag: true,
+    help: 'Force push'
+  })
+  .option('remove', {
+    flag: true,
+    help: 'Remove files if they are not at local.'
+  })
+  .callback(require('../lib/cmd/push'))
+  .help('Pull.');
+
 
 nomnom.parse();
