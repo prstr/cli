@@ -2,11 +2,12 @@
   "name": "prostore.cli",
   "version": "0.0.6",
   "description": "ProStore Command Line Interface",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "bin/prostore.js",
+  "bin": {
+    "prostore": "bin/prostore.js"
+  },
   "dependencies": {
     "prostore.api-client": "*",
     "fs-extra": "*",

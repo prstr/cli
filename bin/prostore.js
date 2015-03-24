@@ -4,38 +4,35 @@
 var nomnom = require('nomnom');
 
 nomnom.command('init')
-  .callback(function(opts) {
-    require('../lib/cmd/init')
-  })
-  .help('Initialize the store directory.');
+  .callback(require('../lib/cmd/init'))
+  .help('Initialize ProStore project');
 
 nomnom.command('test')
-  .help('Test.')
+  .help('Test API keypair authentication')
   .callback(require('../lib/cmd/test'));
 
 nomnom.command('pull')
   .option('force', {
     flag: true,
-    help: 'Force pull'
+    help: 'Ignore last modified cache'
   })
   .option('remove', {
     flag: true,
-    help: 'Remove files if they are not at server.'
+    help: 'Remove files not present on server'
   })
   .callback(require('../lib/cmd/pull'))
-  .help('Pull.');
+  .help('Download store files from server');
 
 nomnom.command('push')
   .option('force', {
     flag: true,
-    help: 'Force push'
+    help: 'Ignore last modified cache'
   })
   .option('remove', {
     flag: true,
-    help: 'Remove files if they are not at local.'
+    help: 'Remove files not present locally'
   })
   .callback(require('../lib/cmd/push'))
-  .help('Pull.');
-
+  .help('Upload store files to server');
 
 nomnom.parse();
