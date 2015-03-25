@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "prostore.api-client": "*",
+    "prostore.glob-utils": "*",
     "fs-extra": "*",
     "underscore": "*",
     "prompt": "*",
     "nomnom": "*",
     "async": "*",
-    "cli-color": "*",
-    "glob": "*"
+    "cli-color": "*"
   },
   "repository": {
     "type": "git",
