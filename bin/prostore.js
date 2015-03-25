@@ -11,6 +11,10 @@ nomnom.command('test')
   .help('Test API keypair authentication')
   .callback(require('../lib/cmd/test'));
 
+nomnom.command('status')
+  .callback(require('../lib/cmd/status'))
+  .help('Show what\'s modified on server vs. locally');
+
 nomnom.command('pull')
   .option('force', {
     flag: true,
