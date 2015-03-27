@@ -6,7 +6,6 @@ var nomnom = require('nomnom');
 nomnom.command('login')
   .help('Obtain authentication tokens for ProStore')
   .option('url', {
-    required: true,
     position: 1,
     help: 'Store URL (e.g. https://example.store)'
   })
