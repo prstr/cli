@@ -3,12 +3,13 @@
 
 var nomnom = require('nomnom');
 
-nomnom.command('test')
-  .help('Test API keypair authentication')
-  .callback(require('../lib/cmd/test'));
-
 nomnom.command('login')
-  .help('Login')
+  .help('Obtain authentication tokens for ProStore')
+  .option('url', {
+    required: true,
+    position: 1,
+    help: 'Store URL (e.g. https://example.store)'
+  })
   .callback(require('../lib/cmd/login'));
 
 nomnom.command('status')

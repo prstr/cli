@@ -12,14 +12,14 @@
     "prostore.api-client": "*",
     "prostore.glob-utils": "*",
     "fs-extra": "*",
-    "underscore": "*",
     "prompt": "*",
     "request": "*",
     "nomnom": "*",
     "sha256": "*",
     "randomstring": "*",
     "async": "*",
-    "cli-color": "*"
+    "cli-color": "*",
+    "homedir": "*"
   },
   "repository": {
     "type": "git",
