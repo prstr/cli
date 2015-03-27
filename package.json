@@ -14,7 +14,10 @@
     "fs-extra": "*",
     "underscore": "*",
     "prompt": "*",
+    "request": "*",
     "nomnom": "*",
+    "sha256": "*",
+    "randomstring": "*",
     "async": "*",
     "cli-color": "*"
   },

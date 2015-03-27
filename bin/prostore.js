@@ -3,13 +3,13 @@
 
 var nomnom = require('nomnom');
 
-nomnom.command('init')
-  .callback(require('../lib/cmd/init'))
-  .help('Initialize ProStore project');
-
 nomnom.command('test')
   .help('Test API keypair authentication')
   .callback(require('../lib/cmd/test'));
+
+nomnom.command('login')
+  .help('Login')
+  .callback(require('../lib/cmd/login'));
 
 nomnom.command('status')
   .callback(require('../lib/cmd/status'))
