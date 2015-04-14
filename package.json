@@ -22,7 +22,8 @@
     "cli-color": "*",
     "homedir": "*",
     "express": "*",
-    "morgan": "*"
+    "morgan": "*",
+    "nanotemplates": "*"
   },
   "repository": {
     "type": "git",
