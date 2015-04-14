@@ -39,6 +39,9 @@ nomnom.command('pull')
     help: 'Print debug messages',
     flag: true
   })
+  .option('theme', {
+    help: 'Download theme files instead'
+  })
   .callback(require('../lib/cmd/pull'))
   .help('Download store files from server');
 
