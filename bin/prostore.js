@@ -14,6 +14,10 @@ nomnom.command('login')
     help: 'Print debug messages',
     flag: true
   })
+  .option('cwd', {
+    help: 'Current work directory',
+    default: process.cwd()
+  })
   .callback(require('../lib/cmd/login'));
 
 nomnom.command('status')
@@ -21,6 +25,10 @@ nomnom.command('status')
     abbr: 'v',
     help: 'Print debug messages',
     flag: true
+  })
+  .option('cwd', {
+    help: 'Current work directory',
+    default: process.cwd()
   })
   .callback(require('../lib/cmd/status'))
   .help('Show what\'s modified on server vs. locally');
@@ -42,6 +50,10 @@ nomnom.command('pull')
   .option('theme', {
     help: 'Download theme files instead'
   })
+  .option('cwd', {
+    help: 'Current work directory',
+    default: process.cwd()
+  })
   .callback(require('../lib/cmd/pull'))
   .help('Download store files from server');
 
@@ -59,7 +71,24 @@ nomnom.command('push')
     help: 'Print debug messages',
     flag: true
   })
+  .option('cwd', {
+    help: 'Current work directory',
+    default: process.cwd()
+  })
   .callback(require('../lib/cmd/push'))
   .help('Upload store files to server');
+
+nomnom.command('mock')
+  .option('port', {
+    abbr: 'p',
+    help: 'Port to listen on',
+    default: 3000
+  })
+  .option('cwd', {
+    help: 'Current work directory',
+    default: process.cwd()
+  })
+  .callback(require('../lib/cmd/mock'))
+  .help('Start mock server for local development');
 
 nomnom.parse();
