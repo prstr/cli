@@ -6,7 +6,7 @@
     "prostore": "bin/prostore.js"
   },
   "dependencies": {
-    "prostore.api-client": "*",
+    "prostore.rest-client": "*",
     "prostore.glob-utils": "*",
     "prostore.site-router": "*",
     "fs-extra": "*",
