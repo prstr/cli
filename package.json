@@ -9,6 +9,8 @@
     "prostore.rest-client": "*",
     "prostore.glob-utils": "*",
     "prostore.site-router": "*",
+    "prostore.theme-api": "*",
+    "prostore.render": "*",
     "fs-extra": "*",
     "prompt": "*",
     "request": "*",
