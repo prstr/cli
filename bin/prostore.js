@@ -4,79 +4,59 @@
 var nomnom = require('nomnom');
 
 nomnom.command('login')
-  .help('Obtain authentication tokens for ProStore')
+  .help('Получить аутентификацию из ProStore')
   .option('url', {
     position: 1,
-    help: 'Store URL (e.g. https://example.store)'
-  })
-  .option('verbose', {
-    abbr: 'v',
-    help: 'Print debug messages',
-    flag: true
+    help: 'URL магазина (пр. https://example.store)'
   })
   .option('cwd', {
-    help: 'Current work directory',
+    help: 'Рабочая директория',
     default: process.cwd()
   })
   .callback(require('../lib/cmd/login'));
 
 nomnom.command('status')
-  .option('verbose', {
-    abbr: 'v',
-    help: 'Print debug messages',
-    flag: true
-  })
+  .help('Показать отличия локальной версии от версии на сервере')
   .option('cwd', {
-    help: 'Current work directory',
+    help: 'Рабочая директория',
     default: process.cwd()
   })
-  .callback(require('../lib/cmd/status'))
-  .help('Show what\'s modified on server vs. locally');
+  .callback(require('../lib/cmd/status'));
 
 nomnom.command('pull')
+  .help('Скачать файлы с сервера')
   .option('force', {
     flag: true,
-    help: 'Ignore last modified cache'
+    help: 'Не использовать кэш'
   })
   .option('remove', {
     flag: true,
-    help: 'Remove files not present on server'
-  })
-  .option('verbose', {
-    abbr: 'v',
-    help: 'Print debug messages',
-    flag: true
+    help: 'Удалить файлы локально, если их больше нет на сервере'
   })
   .option('theme', {
-    help: 'Download theme files instead'
+    help: 'Скачать обновление указанной темы'
   })
   .option('cwd', {
-    help: 'Current work directory',
+    help: 'Рабочая директория',
     default: process.cwd()
   })
-  .callback(require('../lib/cmd/pull'))
-  .help('Download store files from server');
+  .callback(require('../lib/cmd/pull'));
 
 nomnom.command('push')
+  .help('Загрузить файлы на сервер')
   .option('force', {
     flag: true,
-    help: 'Ignore last modified cache'
+    help: 'Не использовать кэш'
   })
   .option('remove', {
     flag: true,
-    help: 'Remove files not present locally'
-  })
-  .option('verbose', {
-    abbr: 'v',
-    help: 'Print debug messages',
-    flag: true
+    help: 'Удалить файлы с сервера, которых больше нет локально'
   })
   .option('cwd', {
-    help: 'Current work directory',
+    help: 'Рабочая директория',
     default: process.cwd()
   })
-  .callback(require('../lib/cmd/push'))
-  .help('Upload store files to server');
+  .callback(require('../lib/cmd/push'));
 
 nomnom.command('mock')
   .option('port', {
@@ -85,10 +65,10 @@ nomnom.command('mock')
     default: 3000
   })
   .option('cwd', {
-    help: 'Current work directory',
+    help: 'Рабочая директория',
     default: process.cwd()
   })
   .callback(require('../lib/cmd/mock'))
-  .help('Start mock server for local development');
+  .help('Запустить мокап для локальной разработки');
 
 nomnom.parse();

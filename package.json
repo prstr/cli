@@ -18,7 +18,7 @@
     "sha256": "*",
     "randomstring": "*",
     "async": "*",
-    "cli-color": "*",
+    "colors": "*",
     "homedir": "*",
     "express": "*",
     "morgan": "*",
