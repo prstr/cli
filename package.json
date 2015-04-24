@@ -22,7 +22,8 @@
     "homedir": "*",
     "express": "*",
     "morgan": "*",
-    "nanotemplates": "*"
+    "nanotemplates": "*",
+    "underscore": "*"
   },
   "repository": {
     "type": "git",
