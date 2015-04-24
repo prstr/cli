@@ -15,7 +15,7 @@
     "prompt": "*",
     "request": "*",
     "nomnom": "*",
-    "sha256": "*",
+    "sha.js": "*",
     "randomstring": "*",
     "async": "*",
     "colors": "*",
