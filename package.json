@@ -23,7 +23,8 @@
     "express": "*",
     "morgan": "*",
     "nanotemplates": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "which": "*"
   },
   "repository": {
     "type": "git",
