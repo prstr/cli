@@ -27,8 +27,13 @@
     "which": "*"
   },
   "devDependencies": {
-    "eslint": "*"
+    "eslint": "*",
+    "precommit-hook": "*"
   },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "pre-commit": ["lint"],
   "repository": {
     "type": "git",
     "url": "git@github.com:prstr/cli.git"
