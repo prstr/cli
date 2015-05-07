@@ -15,6 +15,10 @@
     "no-underscore-dangle": 0,
     "no-multiple-empty-lines": [ 2, {
       "max": 2
-    } ]
+    } ],
+    "space-before-function-paren": [ 2, {
+      "anonymous": "always",
+      "named": "never"
+    }]
   }
 }
