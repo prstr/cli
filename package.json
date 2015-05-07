@@ -1,6 +1,6 @@
 {
   "name": "prostore.cli",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "ProStore Command Line Interface",
   "bin": {
     "prostore": "bin/prostore.js"
@@ -33,7 +33,9 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:prstr/cli.git"
