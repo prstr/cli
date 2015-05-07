@@ -26,6 +26,9 @@
     "underscore": "*",
     "which": "*"
   },
+  "devDependencies": {
+    "eslint": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:prstr/cli.git"
