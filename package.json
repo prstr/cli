@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "eslint": "*",
-    "precommit-hook": "*"
+    "pre-commit": "*"
   },
   "scripts": {
     "lint": "eslint ."
