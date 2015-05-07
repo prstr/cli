@@ -31,10 +31,10 @@
     "pre-commit": "*"
   },
   "scripts": {
-    "lint": "eslint ."
+    "pretest": "eslint ."
   },
   "pre-commit": [
-    "lint"
+    "test"
   ],
   "repository": {
     "type": "git",
