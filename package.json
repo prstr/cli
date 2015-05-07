@@ -1,6 +1,6 @@
 {
   "name": "prostore.cli",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "ProStore Command Line Interface",
   "bin": {
     "prostore": "bin/prostore.js"
