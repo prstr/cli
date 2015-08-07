@@ -11,6 +11,7 @@
     "prostore.site-router": "*",
     "prostore.theme-api": "*",
     "prostore.render": "*",
+    
     "fs-extra": "*",
     "prompt": "*",
     "request": "*",
@@ -23,8 +24,9 @@
     "express": "*",
     "morgan": "*",
     "nanotemplates": "*",
-    "underscore": "*",
-    "which": "*"
+    "which": "*",
+
+    "lodash.assign": "*"
   },
   "devDependencies": {
     "eslint": "*",
