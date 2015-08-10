@@ -10,6 +10,9 @@
     "prostore.glob-utils": "*",
     "prostore.lib": "*",
 
+    "stylus": "*",
+    "autoprefixer-stylus": "*",
+
     "fs-extra": "*",
     "prompt": "*",
     "request": "*",
