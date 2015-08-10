@@ -1,6 +1,6 @@
 {
   "name": "prostore.cli",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ProStore Command Line Interface",
   "bin": {
     "prostore": "bin/prostore.js"
@@ -9,10 +9,8 @@
     "prostore.rest-client": "*",
     "prostore.glob-utils": "*",
     "prostore.lib": "*",
-
     "stylus": "*",
     "autoprefixer-stylus": "*",
-
     "fs-extra": "*",
     "prompt": "*",
     "request": "*",
@@ -26,7 +24,6 @@
     "morgan": "*",
     "nanotemplates": "*",
     "which": "*",
-
     "lodash.assign": "*"
   },
   "devDependencies": {
